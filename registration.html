@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		<meta charset = "UTF-8"/>
+		<style type="text/css">
+			.megadiv {
+				background:#6688cc;
+			}
+			.topleft {
+				width:100%;
+				float:left;
+				background:#6688cc;
+				clear:both;
+			}
+			.topbar {
+				float:left;
+			}
+			.left {
+				width:30%;
+				float:left;
+				background:#6688cc;
+				margin-right:1%;
+				clear:both;
+			}
+			.right {
+				width:30%;
+				float:right;
+				background:#6688cc;
+				margin-left:1%;
+			}
+			.center {
+				background:#6688cc;
+				padding-right:31%;
+				padding-left:31%;
+			}
+			.btn {
+				background: #30487a;
+				background-image: -webkit-linear-gradient(top, #30487a, #3c5a99);
+				background-image: -moz-linear-gradient(top, #30487a, #3c5a99);
+				background-image: -ms-linear-gradient(top, #30487a, #3c5a99);
+				background-image: -o-linear-gradient(top, #30487a, #3c5a99);
+				background-image: linear-gradient(to bottom, #30487a, #3c5a99);
+				-webkit-border-radius: 28;
+				-moz-border-radius: 28;
+				border-radius: 28px;
+				font-family: ar destine;
+				color: #ffffff;
+				font-size: 15px;
+				padding: 2px 5px 2px 5px;
+				text-decoration: none;
+			}
+
+			.btn:hover {
+				background: #3c5a99;
+				background-image: -webkit-linear-gradient(top, #3c5a99, #30487a);
+				background-image: -moz-linear-gradient(top, #3c5a99, #30487a);
+				background-image: -ms-linear-gradient(top, #3c5a99, #30487a);
+				background-image: -o-linear-gradient(top, #3c5a99, #30487a);
+				background-image: linear-gradient(to bottom, #3c5a99, #30487a);
+				text-decoration: none;
+			}
+			.delbtn{
+				float:right;
+				background: #30487a;
+				background-image: -webkit-linear-gradient(top, #30487a, #3c5a99);
+				background-image: -moz-linear-gradient(top, #30487a, #3c5a99);
+				background-image: -ms-linear-gradient(top, #30487a, #3c5a99);
+				background-image: -o-linear-gradient(top, #30487a, #3c5a99);
+				background-image: linear-gradient(to bottom, #30487a, #3c5a99);
+				-webkit-border-radius: 28;
+				-moz-border-radius: 28;
+				border-radius: 28px;
+				font-family: ar destine;
+				color: #ffffff;
+				font-size: 15px;
+				padding: 2px 5px 2px 5px;
+				text-decoration: none;
+			}
+			.delbtn:hover {
+				background: #3c5a99;
+				background-image: -webkit-linear-gradient(top, #3c5a99, #30487a);
+				background-image: -moz-linear-gradient(top, #3c5a99, #30487a);
+				background-image: -ms-linear-gradient(top, #3c5a99, #30487a);
+				background-image: -o-linear-gradient(top, #3c5a99, #30487a);
+				background-image: linear-gradient(to bottom, #3c5a99, #30487a);
+				text-decoration: none;
+			}
+			body {
+				font-family: ar destine;
+				color: #ffffff;
+			}
+			.infoCom{
+				color: #000000;
+			}
+		</style>
+	</head>
+	<body class="megadiv">
+		<center>
+			<img src="http://image.noelshack.com/fichiers/2015/51/1450375802-logo.png" height=100% width=100% alt="personnages"/>
+			<div name="error">
+				{{message}}
+			</div>
+			<form action="/registerPost" method="post">
+				nickname<br>
+				<input type="text" name="nickname"/><br>
+				username<br>
+				<input type="text" name="username"/><br>
+				password<br>
+				<input type="password" name="password"/><br>
+				<input type="submit" class="btn" value="Confirm Registration"/><br>
+			</form>
+			<form action="/logout" method="post">
+					<input type="submit" class="btn" value="cancel"/>
+			</form>
+		</center>
+	</body>
+</html>
